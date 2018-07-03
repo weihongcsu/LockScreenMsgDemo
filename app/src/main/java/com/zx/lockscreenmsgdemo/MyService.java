@@ -55,6 +55,7 @@ public class MyService extends Service {
                 }
 
                 Intent intent = new Intent();
+                intent.setPackage("com.zx.lockscreenmsgdemo");
                 intent.setAction("com.zx.lockscreenmsgdemo.LockScreenMsgReceiver");
                 sendBroadcast(intent); //发送广播
             }
